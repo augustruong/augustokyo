@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing:border-box; 
+  /* word-break: break-all; */
+}
+html {
+  scroll-behavior: smooth; 
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat',sans-serif;
+}
+body *{z-index: 1; }
+
+
+.dark-theme { background-color: #0A0605; color: #fff;}
+.light-theme { background-color: #F6F6F6; color: #0A0605;}
+
+li { list-style-type: none; }
+ol,ul { list-style: none; }
+dl,dt,dd { margin: 0; padding: 0; }
+p { margin: 0 0 10px; padding: 0; text-align:left; }
+img {border: 0; line-height: 0; vertical-align: bottom;}
+hr { display: none; }
+table { margin: 0; padding: 0; }
+th { text-align: left; font-weight: 500; margin: 0; }
+td { margin: 0; }
+em {font-weight: 500; font-style: normal;}
+form { margin: 0; padding: 0; }
+label { margin: 0; padding: 0;}
+input.btn { margin: 0 0.5em; padding: 0 1em; }
+
+input[type="text"] {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: none;
+}
+input,textarea {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-appearance: none;
+    max-width: 100%;
+  }
+
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    resize: none;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.yellow {color: #FFC130;}
+
+.section-title {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 800;
+  font-size: 52px;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+}
+
+.post-title {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.25px;
+  line-height: 200%;
+  color: #FFFFFF;
+}
+
+.post-subtitle, .post-time {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  line-height: 220%;
+  color: #FFFFFF;
+}
+
+.post-time {opacity: 50%;}
+
+.body-text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 220%;
+  letter-spacing: 0.05em;
+}
+
+button {
+  padding: 16px 34px;
+  background-color: transparent;
+  border-radius: 50px;
+  border: #FFC130 solid 1px; 
+  color: #FFC130;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+button:hover {
+  background-color: #FFC130;
+  color: #0A0605;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  cursor: pointer;
+}
+
+.flex-row-ct {
+    display: flex;
+    flex-diretion: row;
+    align-items: center;
+}

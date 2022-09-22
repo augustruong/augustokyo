@@ -1,0 +1,38 @@
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 34px;
+}
+
+#header .header__menu ul {
+    display: flex;
+    writing-mode: vertical-lr;
+}
+
+#header .header__menu ul li {
+    margin-top: 40px;
+    transform: rotate(180deg);
+
+}
+
+#header a {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: inline-block;
+}
+
+#header .header__options .options__sound { 
+    margin-bottom: 20px;
+}
