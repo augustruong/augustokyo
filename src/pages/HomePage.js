@@ -5,7 +5,7 @@ import './HomePage.css'
 export default function HomePage() {
   return (
     <div id='home-page' className='dark-theme'>
-        <section className='topview'>
+        <section className='topview' id='topview'>
             <img className='home__cover'
                 src={process.env.PUBLIC_URL + `./images/homePage-cover.jpg`}/>
             <img className='home__title'
@@ -29,48 +29,60 @@ export default function HomePage() {
             </div>
         </section>
 
-        <section className='aboutMe' id='about'>
-            <div className='wrapper flex-row-ct'>
-                <div className='ava__wrapper'>
-                    <img className='ava__textArc'
-                         src={process.env.PUBLIC_URL + `./images/text-arc-2.svg`}/>
-                    <img className='ava__img'
-                         src={process.env.PUBLIC_URL + `./images/avatar.png`}/>
-                </div>
-                <div className='content__wrapper'>
-                    <div className='section-title'>About <span className='yellow'>me</span></div>
-                    <div className='body-text'>
-                        Hi, I’m August. I’m Vietnamese living in Tokyo, <br/>
-                        pursuing undergraduate study at Digital Hollywood University since 2019.<br/>
-                        I am majoring in Web Direction and Design Seminar, <br/>
-                        fusing with UX/UI Design and Graphic Design.<br/>
+        <section id='about'>
+            <section className='aboutMe'>
+                <div className='wrapper flex-row-ct'>
+                    <div className='ava__wrapper'>
+                        <img className='ava__textArc'
+                             src={process.env.PUBLIC_URL + `./images/text-arc-2.svg`}/>
+                        <img className='ava__img'
+                             src={process.env.PUBLIC_URL + `./images/avatar.png`}/>
                     </div>
-                    <button>Check out my Portfolio</button>
+                    <div className='content__wrapper'>
+                        <div className='section-title'>About <span className='yellow'>me</span></div>
+                        {window.innerWidth > 960 &&
+                            <div className='body-text'>
+                                Hi, I’m August. I’m Vietnamese living in Tokyo, <br/>
+                                pursuing undergraduate study at Digital Hollywood University since 2019.<br/>
+                                I am majoring in Web Direction and Design Seminar, <br/>
+                                fusing with UX/UI Design and Graphic Design.<br/>
+                            </div>
+                         }
+                         {window.innerWidth <= 960 &&
+                            <div className='body-text'>
+                                Hi, I’m August. I’m Vietnamese<br/>
+                                living in Tokyo, pursuing undergraduate<br/>
+                                study at Digital Hollywood University since 2019.<br/>
+                                I am majoring in Web Direction and Design Seminar, 
+                                fusing with UX/UI Design and Graphic Design.<br/>
+                            </div>
+                         }
+                        <button>Check out my Portfolio</button>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section className='aboutPage'>
-            <div className='wrapper'>
-                <div className='section-title'>About <span className='yellow'>‘augustintokyo’</span></div>
-                <div className='body-text'>
-                    <strong>‘augustintokyo’</strong><br/>
-                    ‘August’ is my name, and ‘Tokyo’ is the city where I’m currently living in. <br/>
-                    In Kanji, ‘August’ is 「八月」and ‘Tokyo’ is 「東京」, <br/>I think it would be nice
-                    to make a square logo combining of the 4 kanji.<br/>
-                    <br/>
-                    <strong>What can you find here? </strong><br/>
-                    ・My recommended spots in Tokyo to visit<br/>
-                    ・A growing-up process of a foreign student in Tokyo<br/>
-                    ・Some inspiration or empathy through words and pictures<br/>
-                    <br/>
-                    <strong>The background</strong><br/>
-                    I started created this in the last year of university, in a rush of seeking for jobs and working on graduation project. There was a time I kept thinking that I should have prepared things earlier. It was a mess! <br/> Then I realized that I need to slow down for a moment, through back and reflect myself in the past few years I spent here, Tokyo. <br/>In the fog of memories, I created this blog to rearrange my mind, by writing everything down.
+            <section className='aboutPage'>
+                <div className='wrapper'>
+                    <div className='section-title'>About <span className='yellow'>‘augustintokyo’</span></div>
+                    <div className='body-text'>
+                        <strong>‘augustintokyo’</strong><br/>
+                        ‘August’ is my name, and ‘Tokyo’ is the city where I’m currently living in. <br/>
+                        In Kanji, ‘August’ is 「八月」and ‘Tokyo’ is 「東京」, <br/>I think it would be nice
+                        to make a square logo combining of the 4 kanji.<br/>
+                        <br/>
+                        <strong>What can you find here? </strong><br/>
+                        ・My recommended spots in Tokyo to visit<br/>
+                        ・A growing-up process of a foreign student in Tokyo<br/>
+                        ・Some inspiration or empathy through words and pictures<br/>
+                        <br/>
+                        <strong>The background</strong><br/>
+                        I started created this in the last year of university, in a rush of seeking for jobs and working on graduation project. There was a time I kept thinking that I should have prepared things earlier. It was a mess! <br/> Then I realized that I need to slow down for a moment, through back and reflect myself in the past few years I spent here, Tokyo. <br/>In the fog of memories, I created this blog to rearrange my mind, by writing everything down.
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
-
-        <section className='storyPosts'>
+        <section id='storyPosts'>
             <div className='wrapper'>
                 <div className='section-title'>Story Posts</div>
 
@@ -113,7 +125,7 @@ export default function HomePage() {
             </div>
         </section>
 
-        <section className='gallery'>
+        <section id='gallery'>
             <div className='wrapper'>
                 <div className='section-title'>Gallery</div>
                 <div className='grid__wrapper'>
@@ -128,7 +140,7 @@ export default function HomePage() {
             </div>
         </section>
 
-        <section className='contact' id='contact'>
+        <section id='contact'>
             <div className='wrapper'>
                 <div className='section-title'>Drop me a <span className='yellow'>‘Konichiwa’</span>!</div>
                 <button>Konichiwa</button>
