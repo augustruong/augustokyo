@@ -30,7 +30,7 @@ export default function HomePage() {
         </section>
 
         <section className='aboutMe' id='about'>
-            <div className='wrapper'>
+            <div className='wrapper flex-row-ct'>
                 <div className='ava__wrapper'>
                     <img className='ava__textArc'
                          src={process.env.PUBLIC_URL + `./images/text-arc-2.svg`}/>

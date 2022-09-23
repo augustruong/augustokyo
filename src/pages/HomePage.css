@@ -52,7 +52,6 @@
     top: 72%;
     left: 50%;
     transform: translateX(-50%);
-    height: 20vh;
 }
 
 .scroll-text {
@@ -66,7 +65,7 @@
 
 .arrow-down {
     display: block;
-    margin-top: 56px;
+    margin-top: 200%;
 }
 
 .arrow-down::after {
@@ -112,8 +111,10 @@
 
 #home-page > .topview > .body-text {
     position: absolute;
+
     top: 76%;
-    right: 18%;
+    left: 50%;
+    transform: translateX(30%);
 }
 
 #home-page .aboutMe {
@@ -123,11 +124,8 @@
 }
 
 #home-page > .aboutMe > .wrapper {
-    width: 60%;
+    width: 62%;
     max-width:1080px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     margin: 0 auto;
 }
