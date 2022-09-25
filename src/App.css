@@ -93,13 +93,21 @@ button {
   letter-spacing: 0.05em;
 }
 
+button a {
+  color: #FFC130;
+}
+
 button:hover {
   background-color: #FFC130;
+  cursor: pointer;
+}
+
+button:hover > a{
   color: #0A0605;
   font-weight: 600;
   letter-spacing: 0.025em;
-  cursor: pointer;
 }
+
 
 .flex-row-ct {
     display: flex;

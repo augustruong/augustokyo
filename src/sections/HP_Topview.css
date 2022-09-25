@@ -1,0 +1,177 @@
+#home-page .topview {
+    position: relative;
+    height: 100vh;
+}
+
+#home-page .topview img {
+    position: absolute;
+    pointer-events: none;
+}
+
+#home-page .topview .home__cover {
+    /* width: 100vw; */
+    position: absolute;
+    top: 0;
+}
+
+#home-page .topview .home__title {
+    width: 34vw;
+    min-width: 420px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+    z-index: 10;
+}
+
+#home-page .topview .home__textArc {
+    width: 14vw;
+    top: 14.6vh;
+    right: 22.1vw;
+    animation: spin 30s infinite linear;
+}
+
+#home-page .topview .home__tokyo { 
+    width: 24vw;
+    top: 45%;
+    left: 20%;
+    z-index: 9;
+}
+
+#home-page .topview .home__hachigatsu {
+    width: 24vw;
+    top: 45%;
+    right: 15%;
+    z-index: 9;
+}
+
+.scroll-down {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll-text {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 200%;
+    letter-spacing: 0.45em;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg) translate(100%,-50%);
+}
+
+.arrow-down {
+    display: block;
+    margin-top: 200%;
+}
+
+.arrow-down::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.scroll-down::before {
+    -webkit-animation: elasticus 3s ease-out infinite;
+    -moz-animation: elasticus 3s ease-out infinite;
+    -o-animation: elasticus 3s ease-out infinite;
+    animation: elasticus 3s ease-out infinite;
+    
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -4px;
+    width: 1.5px;
+    height: 100%;
+    background: #fff;
+    content: ' ';
+}
+
+.scroll-down::after {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -4px;
+    width: 1.5px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    content: ' ';
+}
+
+#home-page > .topview > .body-text {
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translateX(30%);
+}
+@media screen and (max-width: 960px) {
+    #home-page > .topview > .body-text {
+        left: 25%;   
+    }
+    .scroll-down {
+        left: 25%;
+    }
+} 
+@media screen and (max-width: 640px) {
+    #home-page .topview .home__title {
+        max-width: 420px;
+        width: 80vw;
+        min-width: 330px;
+    }
+    #home-page > .topview > .body-text {
+        left: 10%;   
+        width: 64vw;
+    }
+    .scroll-down {
+        left: 16%;
+    }    
+}
+
+@media screen and (max-width: 560px) {
+    #home-page > .topview > .body-text {
+        top: 72vh;
+        left: 0%;   
+        transform: translateX(22%);
+        min-width: 360px;
+    }
+    .scroll-down {
+        top: 68vh;
+        left: 10%;
+    }  
+    
+}
+
+@media screen and (max-width: 460px) {
+    #home-page > .topview > .body-text {
+        top: 68vh;
+        left: 0%;   
+        transform: translateX(40%);
+        min-width: 270px;
+    }
+    .scroll-down {
+        top: 68vh;
+        left: 16%;
+    }  
+    
+}
+
+@media screen and (max-width: 390px) {
+    #home-page > .topview > .body-text {
+        top: 68vh;
+        left: 0%;   
+        transform: translateX(35%);
+        min-width: 270px;
+    }
+    .scroll-down {
+        top: 68vh;
+        left: 15%;
+    }  
+}
