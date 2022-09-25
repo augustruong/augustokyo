@@ -1,0 +1,40 @@
+.postThumb__wrapper { width: 100%; }
+.postThumb__smallImg {
+    border-radius: 15px;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.postThumb__title {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    line-height: 200%;
+    color: #FFFFFF;
+  }
+  
+.postThumb__subtitle, .postThumb__time {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.25px;
+    line-height: 220%;
+    color: #FFFFFF;
+  }
+  
+.postThumb__time {opacity: 50%;}
+
+@media screen and (max-width: 640px) { 
+    .postThumb__img {
+        border-radius: 10px;
+    }
+    .postThumb__title {font-size: 18px;}
+
+    
+}
+
+

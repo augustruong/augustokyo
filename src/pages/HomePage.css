@@ -14,12 +14,14 @@
 }
 
 #home-page .topview .home__cover {
-    width: 100vw;
+    /* width: 100vw; */
+    position: absolute;
     top: 0;
 }
 
 #home-page .topview .home__title {
     width: 34vw;
+    min-width: 420px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-55%);
@@ -111,10 +113,72 @@
 
 #home-page > .topview > .body-text {
     position: absolute;
-
     top: 76%;
     left: 50%;
     transform: translateX(30%);
+}
+@media screen and (max-width: 960px) {
+    #home-page > .topview > .body-text {
+        left: 25%;   
+    }
+    .scroll-down {
+        left: 25%;
+    }
+} 
+@media screen and (max-width: 640px) {
+    #home-page .topview .home__title {
+        max-width: 420px;
+        width: 80vw;
+        min-width: 330px;
+    }
+    #home-page > .topview > .body-text {
+        left: 10%;   
+        width: 64vw;
+    }
+    .scroll-down {
+        left: 16%;
+    }    
+}
+
+@media screen and (max-width: 560px) {
+    #home-page > .topview > .body-text {
+        top: 72vh;
+        left: 0%;   
+        transform: translateX(22%);
+        min-width: 360px;
+    }
+    .scroll-down {
+        top: 68vh;
+        left: 10%;
+    }  
+    
+}
+
+@media screen and (max-width: 460px) {
+    #home-page > .topview > .body-text {
+        top: 68vh;
+        left: 0%;   
+        transform: translateX(40%);
+        min-width: 270px;
+    }
+    .scroll-down {
+        top: 68vh;
+        left: 16%;
+    }  
+    
+}
+
+@media screen and (max-width: 390px) {
+    #home-page > .topview > .body-text {
+        top: 68vh;
+        left: 0%;   
+        transform: translateX(35%);
+        min-width: 270px;
+    }
+    .scroll-down {
+        top: 68vh;
+        left: 15%;
+    }  
 }
 
 #home-page #about .aboutMe {
@@ -208,6 +272,12 @@
     }
 }
 
+@media screen and (max-width: 640px) {
+    #home-page #about > .aboutPage {
+        margin-top: 30%;
+    }
+}
+
 #home-page #storyPosts {
     width: 100vw;
     height: auto;
@@ -240,17 +310,54 @@
     cursor: pointer;
 }
 
-#home-page #storyPosts > .wrapper > .s-posts.flex-row-ct {
+#home-page #storyPosts > .wrapper > .l-post-wrapper > .content > .title {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    line-height: 200%;
+}
+
+#home-page #storyPosts > .wrapper > .l-post-wrapper > .content > .subtitle,.time {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.25px;
+    line-height: 220%;
+}
+#home-page #storyPosts > .wrapper > .l-post-wrapper > .content > .time { opacity: 50%; }
+
+#home-page #storyPosts > .wrapper > .s-posts {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
     gap: 25px; 
     margin-top: 25px;
 }
 
-#home-page #storyPosts > .wrapper > .s-posts.flex-row-ct > .wrapper > .s-post-img {
-    background: grey;
-    border-radius: 15px;
-    aspect-ratio: 1 / 1;
-    margin-bottom: 15px;
-    cursor: pointer;
+
+@media screen and (max-width: 640px) { 
+    #home-page #storyPosts {
+        padding-top: 20%;
+    }
+
+    #home-page #storyPosts > .wrapper {
+        min-width: 330px;
+        width: 90%;
+    }
+    #home-page #storyPosts > .wrapper > .l-post-wrapper {
+        padding: 20px 30px;
+        width: 100%;
+        min-width: 330px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    #home-page #storyPosts > .wrapper > .s-posts{
+        gap: 15px; 
+        margin-top: 15px;
+    }
+    
 }
 
 #home-page #gallery {
@@ -343,14 +450,53 @@
     transform: translate(-50%,-50%);
 }
 
+@media screen and (max-width: 640px) {
+    #home-page #gallery {
+        padding-top: 15%;
+        height: auto;
+    }
+
+    #home-page #gallery > .wrapper {
+        min-width: 330px;
+        width: 90%;
+    }
+
+    #home-page #gallery > .wrapper > .grid__wrapper {
+        grid-template-columns: [c0] 220px [c1] 10px [c2] 220px [c3];
+        grid-template-rows: [r0] 220px [r1] 10px [r2] 220px [r3] 10px [r4] 275px [r5];
+    }
+
+    #home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p1 {
+        grid-column-start: c0;
+        grid-column-end: span c1;
+        grid-row-start: r0;
+        grid-row-end: span r1;
+    }
+    
+    #home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p3 {
+        grid-column-start: c2;
+        grid-column-end: span c3;
+        grid-row-start: r2;
+        grid-row-end: span r3;
+    }
+    #home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p4 {
+        grid-column-start: c0;
+        grid-column-end: span c1;
+        grid-row-start: r2;
+        grid-row-end: span r3;
+    }
+    #home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p5 {
+        grid-column-start: c0;
+        grid-column-end: span c3;
+        grid-row-start: r4;
+        grid-row-end: span r5;
+    }
+}
+
 #home-page #contact {
     width: 100vw;
     height: 110vh;
-    padding-top: 24%;
-}
-
-#home-page #contact > .wrapper {
-
+    padding-top: 35%;
 }
 
 #home-page #contact > .wrapper > .section-title {
@@ -362,5 +508,12 @@
 
 #home-page #contact > .wrapper > img {
     width: 100vw;
-    margin-top: 5%;
+    /* margin-top: 5%; */
+}
+
+@media screen and (max-width: 640px) {
+    #home-page #contact > .wrapper > img {
+        width: 250vw;
+        margin-left: -40%;
+    }
 }

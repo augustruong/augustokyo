@@ -73,26 +73,6 @@ textarea {
   color: #FFFFFF;
 }
 
-.post-title {
-  font-family: 'Montserrat',sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 0.25px;
-  line-height: 200%;
-  color: #FFFFFF;
-}
-
-.post-subtitle, .post-time {
-  font-family: 'Montserrat',sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-  letter-spacing: 0.25px;
-  line-height: 220%;
-  color: #FFFFFF;
-}
-
-.post-time {opacity: 50%;}
-
 .body-text {
   font-family: 'Montserrat',sans-serif;
   font-size: 14px;
@@ -123,6 +103,12 @@ button:hover {
 
 .flex-row-ct {
     display: flex;
-    flex-diretion: row;
+    flex-direction: row;
     align-items: center;
+}
+
+@media screen and (max-width: 640px) { 
+  .section-title {
+    font-size: 42px;
+  }
 }
