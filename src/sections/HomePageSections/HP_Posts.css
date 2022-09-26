@@ -1,0 +1,13 @@
+#home-page #hp_storyPosts {
+    width: 100vw;
+    height: auto;
+    padding-top: 10%;
+}
+
+
+@media screen and (max-width: 640px) { 
+    #home-page #hp_storyPosts {
+        padding-top: 20%;
+    }
+    
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationData from '../data/data.json'
+import animationData from '../../data/data.json'
 
 import './HP_Topview.css'
 
@@ -14,7 +14,7 @@ export default function HP_Topview() {
     const lang = document.documentElement.lang;
 
     return (
-        <section className='topview' id='topview'>
+        <section className='hp_topview' id='hp_topview'>
             <div className='home__cover'>
                 <Lottie options={defaultOptions} isClickToPauseDisabled={true} />
             </div>

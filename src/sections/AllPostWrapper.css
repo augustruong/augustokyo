@@ -1,0 +1,71 @@
+.allPost__wrapper {
+    max-width: 810px;
+    margin: 0 auto;
+    
+}
+
+.allPost__wrapper > .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.allPost__wrapper > button {display: block; margin: 80px auto;}
+
+.allPost__wrapper > .l-post-wrapper {
+    height: 35vh;
+    min-height: 400px;
+    padding-top: 25px;
+    padding-left: 40px;
+    background-image: url('/public/images/firstday.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.allPost__wrapper > .l-post-wrapper > .content > .title {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    line-height: 200%;
+}
+
+.allPost__wrapper > .l-post-wrapper > .content > .subtitle,.time {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.25px;
+    line-height: 220%;
+}
+
+.allPost__wrapper > .l-post-wrapper > .content > .time { opacity: 50%; }
+
+.allPost__wrapper > .s-posts-wrapper > .s-posts {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 900px) { 
+
+    .allPost__wrapper {
+        width: 350px;
+    }
+    .allPost__wrapper > .l-post-wrapper {
+        padding: 20px 30px;
+        width: 100%;
+        min-width: 330px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .allPost__wrapper > .s-posts-wrapper > .s-posts{
+        gap: 10px; 
+        margin-top: 10px;
+    }
+    
+}

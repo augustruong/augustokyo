@@ -1,23 +1,23 @@
-#home-page #contact {
+#home-page #hp_contact {
     width: 100vw;
     height: 110vh;
     padding-top: 35%;
 }
 
-#home-page #contact > .wrapper > .section-title {
+#home-page #hp_contact > .wrapper > .section-title {
     text-align: center;
     margin-bottom: 60px;
 }
 
-#home-page #contact > .wrapper > button {display: block; margin: 80px auto;}
+#home-page #hp_contact > .wrapper > button {display: block; margin: 80px auto;}
 
-#home-page #contact > .wrapper > img {
+#home-page #hp_contact > .wrapper > img {
     width: 100vw;
     /* margin-top: 5%; */
 }
 
 @media screen and (max-width: 640px) {
-    #home-page #contact > .wrapper > img {
+    #home-page #hp_contact > .wrapper > img {
         width: 250vw;
         margin-left: -40%;
     }

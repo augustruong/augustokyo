@@ -91,6 +91,7 @@ button {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.05em;
+  z-index: 9999;
 }
 
 button a {

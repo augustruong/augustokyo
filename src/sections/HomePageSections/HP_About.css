@@ -1,17 +1,17 @@
-#home-page #about .aboutMe {
+#home-page #hp_about .aboutMe {
     width: 100vw;
     height: 100vh;
     padding-top: 14%;
 }
 
-#home-page #about > .aboutMe > .wrapper {
+#home-page #hp_about > .aboutMe > .wrapper {
     width: 62%;
     max-width:1080px;
     justify-content: space-between;
     margin: 0 auto;
 }
 
-#home-page #about > .aboutMe > .wrapper > .ava__wrapper {
+#home-page #hp_about > .aboutMe > .wrapper > .ava__wrapper {
     position: relative;
     width: 20vw;
     height: 20vw;
@@ -33,11 +33,11 @@
     width: 66%;
 }
 
-#home-page #about > .aboutMe > .wrapper > .content__wrapper {
+#home-page #hp_about > .aboutMe > .wrapper > .content__wrapper {
     min-width: 320px;
 }
 
-#home-page #about > .aboutMe > .wrapper > .content__wrapper > .body-text {
+#home-page #hp_about > .aboutMe > .wrapper > .content__wrapper > .body-text {
     margin: 27px 0;
 }
 
@@ -52,7 +52,7 @@
     #home-page #about > .aboutMe > .wrapper > .content__wrapper > button {display: block; margin: 45px auto;}
 }
 
-#home-page #about .aboutPage {
+#home-page #hp_about .aboutPage {
     width: 100vw;
     height: auto;
     padding-bottom: 750px;
@@ -63,26 +63,26 @@
     background-position: bottom;
 }
 
-#home-page #about > .aboutPage > .wrapper {
+#home-page #hp_about > .aboutPage > .wrapper {
     margin: 0 auto;
     width: 50%;
 }
 
-#home-page #about > .aboutPage > .wrapper > .section-title{
+#home-page #hp_about > .aboutPage > .wrapper > .section-title{
     text-align: center;
     margin-bottom: 60px;
 }
 
-#home-page >#about > .aboutPage > .wrapper > .body-text {
+#home-page >#hp_about > .aboutPage > .wrapper > .body-text {
     max-width: 550px;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 960px) {
-    #home-page #about > .aboutPage > .wrapper {
+    #home-page #hp_about > .aboutPage > .wrapper {
         width: 90%;
     }
-    #home-page >#about > .aboutPage > .wrapper > .body-text {
+    #home-page >#hp_about > .aboutPage > .wrapper > .body-text {
         width: 64%;
         min-width: 320px;
         margin: 0 auto;
@@ -90,7 +90,7 @@
 }
 
 @media screen and (max-width: 640px) {
-    #home-page #about > .aboutPage {
+    #home-page #hp_about > .aboutPage {
         margin-top: 30%;
     }
 }

@@ -6,7 +6,7 @@ export default function HP_About() {
     const lang = document.documentElement.lang;
 
     return (
-        <section id='about'>
+        <section id='hp_about'>
             <section className='aboutMe'>
                 <div className='wrapper flex-row-ct'>
                     <div className='ava__wrapper'>
@@ -106,6 +106,7 @@ export default function HP_About() {
                             気づきました。そして、このブログで、自分の頭の中を整理してみようと思いました。<br/>
                         </div>
                     }
+                
                 </div>
             </section>
         </section>

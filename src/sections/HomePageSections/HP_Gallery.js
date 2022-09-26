@@ -8,7 +8,7 @@ export default function HP_Gallery() {
     const lang = document.documentElement.lang;
 
     return(
-        <section id='gallery'>
+        <section id='hp_gallery'>
             <div className='wrapper'>
                 <div className='section-title'>Gallery</div>
                 <div className='grid__wrapper'>

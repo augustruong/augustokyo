@@ -1,11 +1,20 @@
 .postThumb__wrapper { width: 100%; }
-.postThumb__smallImg {
-    border-radius: 15px;
-    aspect-ratio: 1 / 1;
+
+.postThumb__smallImg, .postThumb__mediumImg {
     margin-bottom: 15px;
     cursor: pointer;
     background-size: cover;
     background-position: center;
+    border-radius: 15px;
+}
+.postThumb__smallImg {
+    height: 260px;
+    width: 260px;
+}
+
+.postThumb__mediumImg {
+    height: 260px;
+    width: 535px;
 }
 
 .postThumb__title {
@@ -28,12 +37,20 @@
   
 .postThumb__time {opacity: 50%;}
 
-@media screen and (max-width: 640px) { 
+@media screen and (max-width: 900px) { 
     .postThumb__img {
         border-radius: 10px;
     }
-    .postThumb__title {font-size: 18px;}
+    .postThumb__title {font-size: 14px; }
 
+    .postThumb__smallImg {
+        height: 170px;
+        width: 170px;
+    }
+    .postThumb__mediumImg {
+        height: 170px;
+        width: 340px;
+    }
     
 }
 

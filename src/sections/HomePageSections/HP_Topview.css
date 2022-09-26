@@ -1,20 +1,20 @@
-#home-page .topview {
+#home-page .hp_topview {
     position: relative;
     height: 100vh;
 }
 
-#home-page .topview img {
+#home-page .hp_topview img {
     position: absolute;
     pointer-events: none;
 }
 
-#home-page .topview .home__cover {
+#home-page .hp_topview .home__cover {
     /* width: 100vw; */
     position: absolute;
     top: 0;
 }
 
-#home-page .topview .home__title {
+#home-page .hp_topview .home__title {
     width: 34vw;
     min-width: 420px;
     top: 50%;
@@ -23,21 +23,21 @@
     z-index: 10;
 }
 
-#home-page .topview .home__textArc {
+#home-page .hp_topview .home__textArc {
     width: 14vw;
     top: 14.6vh;
     right: 22.1vw;
     animation: spin 30s infinite linear;
 }
 
-#home-page .topview .home__tokyo { 
+#home-page .hp_topview .home__tokyo { 
     width: 24vw;
     top: 45%;
     left: 20%;
     z-index: 9;
 }
 
-#home-page .topview .home__hachigatsu {
+#home-page .hp_topview .home__hachigatsu {
     width: 24vw;
     top: 45%;
     right: 15%;
@@ -106,14 +106,14 @@
     content: ' ';
 }
 
-#home-page > .topview > .body-text {
+#home-page > .hp_topview > .body-text {
     position: absolute;
     top: 76%;
     left: 50%;
     transform: translateX(30%);
 }
 @media screen and (max-width: 960px) {
-    #home-page > .topview > .body-text {
+    #home-page > .hp_topview > .body-text {
         left: 25%;   
     }
     .scroll-down {
@@ -121,12 +121,12 @@
     }
 } 
 @media screen and (max-width: 640px) {
-    #home-page .topview .home__title {
+    #home-page .hp_topview .home__title {
         max-width: 420px;
         width: 80vw;
         min-width: 330px;
     }
-    #home-page > .topview > .body-text {
+    #home-page > .hp_topview > .body-text {
         left: 10%;   
         width: 64vw;
     }
@@ -136,7 +136,7 @@
 }
 
 @media screen and (max-width: 560px) {
-    #home-page > .topview > .body-text {
+    #home-page > .hp_topview > .body-text {
         top: 72vh;
         left: 0%;   
         transform: translateX(22%);
@@ -150,7 +150,7 @@
 }
 
 @media screen and (max-width: 460px) {
-    #home-page > .topview > .body-text {
+    #home-page > .hp_topview > .body-text {
         top: 68vh;
         left: 0%;   
         transform: translateX(40%);
@@ -164,7 +164,7 @@
 }
 
 @media screen and (max-width: 390px) {
-    #home-page > .topview > .body-text {
+    #home-page > .hp_topview > .body-text {
         top: 68vh;
         left: 0%;   
         transform: translateX(35%);

@@ -2,15 +2,17 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './HP_Posts.css'
-import PostThumb from '../components/PostThumb';
+import '../AllPostWrapper.css'
+
+import PostThumb from '../../components/PostThumb';
 
 
 export default function HP_Posts() {
     const lang = document.documentElement.lang;
 
     return(
-        <section id='storyPosts'>
-            <div className='wrapper'>
+        <section id='hp_storyPosts'>
+            <div className='allPost__wrapper'>
                 <div className='section-title'>Story Posts</div>
 
                 <div className='l-post-wrapper'>
@@ -21,11 +23,23 @@ export default function HP_Posts() {
                     </div>
                 </div>
 
-                <div className='s-posts'>
-                    <PostThumb index={1}/>
-                    <PostThumb index={2}/>
-                    {window.innerWidth > 640 && <PostThumb index={3}/> }
+                {window.innerWidth > 900 &&
+                <div className='s-posts-wrapper'>
+                     <div className='s-posts'>
+                         <PostThumb index={1}/>
+                         <PostThumb index={2}/>
+                         <PostThumb index={3}/> 
+                    </div>
                 </div>
+            }
+            {window.innerWidth <= 900 &&
+                <div className='s-posts-wrapper'>
+                     <div className='s-posts'>
+                         <PostThumb index={1}/>
+                         <PostThumb index={2}/>
+                    </div>
+                </div>
+            }
 
                 <button>
                     <NavLink to='/allpost'>

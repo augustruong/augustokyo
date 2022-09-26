@@ -1,40 +1,40 @@
-#home-page #gallery {
+#home-page #hp_gallery {
     width: 100vw;
     height: 70vh;
     padding-top: 10%;
 }
 
-#home-page #gallery > .wrapper {
+#home-page #hp_gallery > .wrapper {
     width: 60%;
     max-width: 820px;
     height: 80%;
     margin: 0 auto;
 }
 
-#home-page #gallery > .wrapper > .section-title {
+#home-page #hp_gallery > .wrapper > .section-title {
     text-align: center;
     margin-bottom: 60px;
 }
 
-#home-page #gallery > .wrapper > .grid__wrapper {
+#home-page #hp_gallery > .wrapper > .grid__wrapper {
     display: grid;
     grid-template-columns: [c0] 220px [c1] 20px [c2] 220px [c3] 20px [c4] auto [c5];
     grid-template-rows: [r0] 220px [r1] 20px [r2] 35px [r3] 20px [r4] 275px [r5];
 }
 
-#home-page #gallery > .wrapper > .grid__wrapper > div {border-radius: 5px;}
+#home-page #hp_gallery > .wrapper > .grid__wrapper > div {border-radius: 5px;}
 
-#home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p1 {
+#home-page #hp_gallery > .wrapper > .grid__wrapper > .grid__item.p1 {
     grid-column-start: c0;
     grid-column-end: span c1;
     grid-row-start: r0;
     grid-row-end: span r3;
 
-    background-image: url('/public/images/todoroki.jpg');
+    background-image: url('/public/images/10-00.jpg');
     background-size: cover;
 }
 
-#home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p2 {
+#home-page #hp_gallery > .wrapper > .grid__wrapper > .grid__item.p2 {
     grid-column-start: c2;
     grid-column-end: span c3;
     grid-row-start: r0;
@@ -43,7 +43,7 @@
     background-image: url('/public/images/station.jpg');
     background-size: cover;
 }
-#home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p3 {
+#home-page #hp_gallery > .wrapper > .grid__wrapper > .grid__item.p3 {
     grid-column-start: c4;
     grid-column-end: span c5;
     grid-row-start: r0;
@@ -52,7 +52,7 @@
     background-image: url('/public/images/IMG_4713.jpg');
     background-size: cover;
 }
-#home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p4 {
+#home-page #hp_gallery > .wrapper > .grid__wrapper > .grid__item.p4 {
     grid-column-start: c0;
     grid-column-end: span c1;
     grid-row-start: r4;
@@ -61,7 +61,7 @@
     background-image: url('/public/images/IMG_0737.jpg');
     background-size: cover;
 }
-#home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p5 {
+#home-page #hp_gallery > .wrapper > .grid__wrapper > .grid__item.p5 {
     grid-column-start: c2;
     grid-column-end: span c5;
     grid-row-start: r2;
@@ -70,7 +70,7 @@
     position: relative;
 }
 
-#home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p5::before {
+#home-page #hp_gallery > .wrapper > .grid__wrapper > .grid__item.p5::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -81,7 +81,7 @@
     position: absolute;
 }
 
-#home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p5 > button {
+#home-page #hp_gallery > .wrapper > .grid__wrapper > .grid__item.p5 > button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -89,41 +89,41 @@
 }
 
 @media screen and (max-width: 640px) {
-    #home-page #gallery {
+    #home-page #hp_gallery {
         padding-top: 15%;
         height: auto;
     }
 
-    #home-page #gallery > .wrapper {
+    #home-page #hp_gallery > .wrapper {
         min-width: 330px;
         width: 90%;
     }
 
-    #home-page #gallery > .wrapper > .grid__wrapper {
+    #home-page #hp_gallery > .wrapper > .grid__wrapper {
         grid-template-columns: [c0] 220px [c1] 10px [c2] 220px [c3];
         grid-template-rows: [r0] 220px [r1] 10px [r2] 220px [r3] 10px [r4] 275px [r5];
     }
 
-    #home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p1 {
+    #home-page #hp_gallery > .wrapper > .grid__wrapper > .grid__item.p1 {
         grid-column-start: c0;
         grid-column-end: span c1;
         grid-row-start: r0;
         grid-row-end: span r1;
     }
     
-    #home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p3 {
+    #home-page #hp_gallery > .wrapper > .grid__wrapper > .grid__item.p3 {
         grid-column-start: c2;
         grid-column-end: span c3;
         grid-row-start: r2;
         grid-row-end: span r3;
     }
-    #home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p4 {
+    #home-page #hp_gallery > .wrapper > .grid__wrapper > .grid__item.p4 {
         grid-column-start: c0;
         grid-column-end: span c1;
         grid-row-start: r2;
         grid-row-end: span r3;
     }
-    #home-page #gallery > .wrapper > .grid__wrapper > .grid__item.p5 {
+    #home-page #hp_gallery > .wrapper > .grid__wrapper > .grid__item.p5 {
         grid-column-start: c0;
         grid-column-end: span c3;
         grid-row-start: r4;

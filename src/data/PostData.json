@@ -27,5 +27,57 @@
         "subtitle": "A picnic on my Tokyo bestie’s birthday",
         "time": "Apr 30, 2019",
         "thumbSize": "small"
+    },
+    {
+        "postId": "04",
+        "title": "Chikuzenya Ayase",
+        "subtitle": "My second partime job",
+        "time": "Sep 10, 2018",
+        "thumbSize": "medium"
+
+    },
+    {
+        "postId": "05",
+        "title": "Nishiarai - Arakawa",
+        "subtitle": "Random place, unexpected joyness",
+        "time": "Apr 30, 2019",
+        "thumbSize": "small"
+    },
+    {
+        "postId": "06",
+        "title": "Odaiba, Minato",
+        "subtitle": "Christmas 2019",
+        "time": "Apr 30, 2019",
+        "thumbSize": "small"
+    },
+    {
+        "postId": "07",
+        "title": "Ayase, Tokyo",
+        "subtitle": "Spring in Tokyo",
+        "time": "Sep 10, 2018",
+        "thumbSize": "small"
+
+    },
+    {
+        "postId": "08",
+        "title": "Yokohama",
+        "subtitle": "Hanging out with my sis",
+        "time": "Apr 30, 2019",
+        "thumbSize": "small"
+    },
+    {
+        "postId": "09",
+        "title": "Abura Soba",
+        "subtitle": "Me and my friends’ favorite dish",
+        "time": "Sep 10, 2018",
+        "thumbSize": "small"
+
+    },
+    {
+        "postId": "10",
+        "title": "Todoroki Valley",
+        "subtitle": "Reconnect to the nature",
+        "time": "Apr 30, 2019",
+        "thumbSize": "medium"
     }
 ]
