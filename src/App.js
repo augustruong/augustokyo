@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 import Header from './components/Header';
 
 import HomePage from './pages/HomePage';
-import PostPage from './pages/PostPage';
+import AllPostPage from './pages/AllPostPage';
 import GalleryPage from './pages/GalleryPage';
 
 
@@ -22,13 +22,10 @@ export default function App() {
 
         <Routes>
           <Route path='/' element={<HomePage lang='en'/>} />
-          <Route path='/ja' element={<HomePage lang='ja'/>} />
+          {/*<Route path='/ja' element={<HomePage lang='ja'/>} />*/}
 
-          <Route path='/post' element={<PostPage lang='en'/>} />
-          <Route path='/ja/post' element={<PostPage lang='ja'/>} />
-
+          <Route path='/allpost' element={<AllPostPage lang='en'/>} />
           <Route path='/gallery' element={<GalleryPage lang='en'/>} />    
-          <Route path='/ja/gallery' element={<GalleryPage lang='ja'/>} />
 
         </Routes>
 

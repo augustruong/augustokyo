@@ -28,7 +28,7 @@ export default function HP_Posts() {
                 </div>
 
                 <button>
-                    <NavLink to='/post'>
+                    <NavLink to='/allpost'>
                         See all posts
                     </NavLink>
                 </button>

@@ -4,8 +4,9 @@
     "\\public",
     "\\src",
     "\\src\\components",
-    "\\src\\pages"
+    "\\src\\pages",
+    "\\src\\sections"
   ],
-  "SelectedNode": "\\src\\components\\NavBar.js",
+  "SelectedNode": "\\src\\sections\\HP_Posts.js",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,43 @@
+#home-page, #allPost-page, #gallery-page {
+    width: 100vw;
+    height: auto;
+}
+
+#allPost-page > .cover__wrapper, 
+#gallery-page > .cover__wrapper {
+    height: 75vh;
+    background-size: cover;
+    position: relative;
+}
+
+#allPost-page > .cover__wrapper > .content__wrapper,
+#gallery-page > .cover__wrapper > .content__wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    width: 40%;
+    max-width: 640px;
+    text-align: center;
+}
+
+#allPost-page .cover__wrapper .content__wrapper > .title {
+    transform: translate(-5%,-5%);
+
+}
+#allPost-page .cover__wrapper .content__wrapper > .subtitle {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+#allPost-page > .cover__wrapper {
+    background-image: url('/public/images/storyposts-cover.jpg');
+    background-position: center;
+}
+ 
+#gallery-page > .cover__wrapper {
+    background-image: url('/public/images/gallery-cover.jpg');
+    background-position: bottom;
+}

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import ScrollIntoView from 'react-scroll-into-view';
 
 import logo from '../logo.svg';
 
