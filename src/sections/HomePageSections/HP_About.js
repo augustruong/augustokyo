@@ -8,7 +8,7 @@ export default function HP_About() {
     return (
         <section id='hp_about'>
             <section className='aboutMe'>
-                <div className='wrapper flex-row-ct'>
+                <div className='wrapper'>
                     <div className='ava__wrapper'>
                         <img className='ava__textArc'
                              src={process.env.PUBLIC_URL + `./images/text-arc-2.svg`}/>
