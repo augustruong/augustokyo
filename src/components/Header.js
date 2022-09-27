@@ -43,16 +43,16 @@ export default function App() {
             <nav className={clicked ? 'header__menu active' : 'header__menu'}>
                 <ul className='nav__list'>
                     <li className='nav__item'>
-                        <Link to='/#hp_about'  className='nav__link'>About</Link>
+                        <Link to='/#hp_about'  className='nav__link' onClick={() => setClicked(false)}>About</Link>
                     </li>
                     <li className='nav__item'>
-                        <Link to='/#hp_storyPosts'  className='nav__link'>Posts</Link>
+                        <Link to='/#hp_storyPosts'  className='nav__link' onClick={() => setClicked(false)}>Posts</Link>
                     </li>
                     <li className='nav__item'>
-                        <Link to='/#hp_gallery'  className='nav__link'>Gallery</Link>
+                        <Link to='/#hp_gallery'  className='nav__link' onClick={() => setClicked(false)}>Gallery</Link>
                     </li>
                     <li className='nav__item'>
-                        <Link to='/#hp_contact'  className='nav__link'>Contact</Link>
+                        <Link to='/#hp_contact'  className='nav__link' onClick={() => setClicked(false)}>Contact</Link>
                     </li>
                 </ul>
             </nav>

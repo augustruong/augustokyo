@@ -7,8 +7,11 @@
 #home-page #hp_gallery > .wrapper {
     width: 60%;
     max-width: 820px;
-    height: 80%;
+    height: auto;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #home-page #hp_gallery > .wrapper > .section-title {
@@ -17,6 +20,7 @@
 }
 
 #home-page #hp_gallery > .wrapper > .grid__wrapper {
+    width: 100%;
     display: grid;
     grid-template-columns: [c0] 220px [c1] 20px [c2] 220px [c3] 20px [c4] auto [c5];
     grid-template-rows: [r0] 220px [r1] 20px [r2] 35px [r3] 20px [r4] 275px [r5];
@@ -88,7 +92,7 @@
     transform: translate(-50%,-50%);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 920px) {
     #home-page #hp_gallery {
         padding-top: 15%;
         height: auto;
@@ -100,8 +104,9 @@
     }
 
     #home-page #hp_gallery > .wrapper > .grid__wrapper {
-        grid-template-columns: [c0] 220px [c1] 10px [c2] 220px [c3];
-        grid-template-rows: [r0] 220px [r1] 10px [r2] 220px [r3] 10px [r4] 275px [r5];
+        width: auto;
+        grid-template-columns: [c0] 170px [c1] 10px [c2] 170px [c3];
+        grid-template-rows: [r0] 170px [r1] 10px [r2] 170px [r3] 10px [r4] 250px [r5];
     }
 
     #home-page #hp_gallery > .wrapper > .grid__wrapper > .grid__item.p1 {

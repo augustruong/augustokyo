@@ -83,7 +83,7 @@ textarea {
 
 button {
   padding: 16px 34px;
-  background-color: transparent;
+  background-color: #0a060540;
   border-radius: 50px;
   border: #FFC130 solid 1px; 
   color: #FFC130;
@@ -91,7 +91,7 @@ button {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.05em;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 button a {
