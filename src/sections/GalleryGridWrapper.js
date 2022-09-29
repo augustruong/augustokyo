@@ -5,6 +5,8 @@ import imagesData from "../data/ImagesData.json"
 import Masony from "react-masonry-component";
 import InfiniteScroll from "react-infinite-scroll-component";
 
+
+
 // Masory Options
 const masonryOptions = {
   fitWidth: false,
@@ -13,8 +15,7 @@ const masonryOptions = {
   itemSelector: ".photo-item"
 };
 
-
-export default function GalleryGridWrapper() {
+export default function App() {
 
   const [imageModal, setImageModal] = React.useState({
     showModal: false,
@@ -22,6 +23,8 @@ export default function GalleryGridWrapper() {
     imageIndex: null,
     currentSectionLength: null
   });
+
+ 
 
   const refresh = () => {
     console.log("refresh.....");
@@ -49,7 +52,7 @@ export default function GalleryGridWrapper() {
         setImageModal((modal) => ({
           ...modal,
           imageIndex: imageModal.imageIndex + 1,
-          modalSrc: data.url
+          modalSrc: data.urls.regular
         }));
       }
     }
@@ -59,6 +62,7 @@ export default function GalleryGridWrapper() {
     <>
       <InfiniteScroll
         dataLength={imagesData.length}
+        hasMore={true}
         loader={<h4>Loading...</h4>}
         endMessage={
           <p style={{ textAlign: "center" }}>
@@ -76,7 +80,7 @@ export default function GalleryGridWrapper() {
         }
       >
         <Masony
-          className="photo-list"
+          className={"photo-list"}
           elementType={"ul"}
           options={masonryOptions}
           disableImagesLoaded={false}
@@ -84,9 +88,10 @@ export default function GalleryGridWrapper() {
         >
           {imagesData &&
             imagesData.map((photo, index) => (
-              <li className='photo-item' key={index}>
+              <li className={`photo-item`} key={index}>
                 <img
                   src={photo.url}
+                  alt=""
                   onClick={() => {
                     setImageModal({
                       showModal: true,
@@ -130,10 +135,10 @@ export default function GalleryGridWrapper() {
             />
           </div>
 
-          <a href="javascript:void(0)" className="prev" onClick={() => onSet("prev")}>
+          <a href="#" className="prev" onClick={() => onSet("prev")}>
             &#10094;
           </a>
-          <a href="javascript:void(0)" className="next" onClick={() => onSet("next")}>
+          <a href="#" className="next" onClick={() => onSet("next")}>
             &#10095;
           </a>
 

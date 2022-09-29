@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\components",
     "\\src\\pages",
     "\\src\\sections",
     "\\src\\sections\\HomePageSections"
   ],
+  "SelectedNode": "\\src\\components\\PostThumb.js",
   "PreviewInSolutionExplorer": false
 }

@@ -109,7 +109,9 @@
 }
 @media screen and (max-width: 690px) {
 	.photo-list,.photo-item {
-	  width: 360px;
+	  width: 355px;
 	}
-
+	.modal-content {
+		max-width: 355px;
+	}
 }

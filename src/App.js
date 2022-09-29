@@ -17,6 +17,7 @@ export default function App() {
 
   return (
     <>
+    
       <Router>
         <Header navColor={navColor}/>
 
@@ -25,7 +26,7 @@ export default function App() {
           {/*<Route path='/ja' element={<HomePage lang='ja'/>} />*/}
 
           <Route path='/allpost' element={<AllPostPage lang='en'/>} />
-          <Route path='/gallery' element={<GalleryPage lang='en'/>} />    
+          <Route path='/gallery' element={<GalleryPage/>} />    
 
         </Routes>
 
