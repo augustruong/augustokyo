@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
-    "\\src\\components",
     "\\src\\pages",
-    "\\src\\sections"
+    "\\src\\sections",
+    "\\src\\sections\\HomePageSections"
   ],
-  "SelectedNode": "\\src\\sections\\HP_Posts.js",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,14 @@
+.stackgrid{
+    height: 2180px;
+}
+
+.stackgrid-img {
+    display: block;
+    border-radius: 7px;
+}
+
+.stackgrid-img > img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
