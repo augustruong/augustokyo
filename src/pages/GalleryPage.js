@@ -14,6 +14,7 @@ export default function GalleryPage() {
 			</div>
 		</section>
 		<GalleryGridWrapper/>
+		<p style={{textAlign:'center',marginTop:'100px'}}>♡＼(￣▽￣)／♡</p>
 	</div>
   )
  }

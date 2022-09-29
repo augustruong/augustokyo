@@ -3,8 +3,8 @@
     height: auto;
 }
 
-#allPost-page {
-    padding-bottom: 15%;
+#allPost-page, #gallery-page {
+    padding-bottom: 7%;
 }
 
 #allPost-page > .cover__wrapper, 
@@ -18,7 +18,7 @@
 #allPost-page > .cover__wrapper > .content__wrapper,
 #gallery-page > .cover__wrapper > .content__wrapper{
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%,-100%);
     max-width: 640px;

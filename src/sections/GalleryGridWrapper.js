@@ -3,9 +3,6 @@ import "./GalleryGridWrapper.css";
 import imagesData from "../data/ImagesData.json"
 
 import Masony from "react-masonry-component";
-import InfiniteScroll from "react-infinite-scroll-component";
-
-
 
 // Masory Options
 const masonryOptions = {
@@ -16,19 +13,12 @@ const masonryOptions = {
 };
 
 export default function App() {
-
   const [imageModal, setImageModal] = React.useState({
     showModal: false,
     modalSrc: null,
     imageIndex: null,
     currentSectionLength: null
   });
-
- 
-
-  const refresh = () => {
-    console.log("refresh.....");
-  };
 
   const onSet = (type) => {
     if (type == "prev") {
@@ -38,7 +28,7 @@ export default function App() {
         setImageModal((modal) => ({
           ...modal,
           imageIndex: imageModal.imageIndex - 1,
-          modalSrc: data.urls.regular
+          modalSrc: data.url
         }));
       } else {
         alert("NO MORE LEFT IMAGE");
@@ -52,7 +42,7 @@ export default function App() {
         setImageModal((modal) => ({
           ...modal,
           imageIndex: imageModal.imageIndex + 1,
-          modalSrc: data.urls.regular
+          modalSrc: data.url
         }));
       }
     }
@@ -60,25 +50,6 @@ export default function App() {
 
   return (
     <>
-      <InfiniteScroll
-        dataLength={imagesData.length}
-        hasMore={true}
-        loader={<h4>Loading...</h4>}
-        endMessage={
-          <p style={{ textAlign: "center" }}>
-            <b>Yay! You have seen it all</b>
-          </p>
-        }
-        refreshFunction={refresh}
-        pullDownToRefresh
-        pullDownToRefreshThreshold={50}
-        pullDownToRefreshContent={
-          <h3 style={{ textAlign: "center" }}>&#8595; Pull down to refresh</h3>
-        }
-        releaseToRefreshContent={
-          <h3 style={{ textAlign: "center" }}>&#8593; Release to refresh</h3>
-        }
-      >
         <Masony
           className={"photo-list"}
           elementType={"ul"}
@@ -104,7 +75,6 @@ export default function App() {
               </li>
             ))}
         </Masony>
-      </InfiniteScroll>
 
       <div
         id="myModal"
@@ -135,10 +105,10 @@ export default function App() {
             />
           </div>
 
-          <a href="#" className="prev" onClick={() => onSet("prev")}>
+          <a href="javascript:void(0)" className="prev" onClick={() => onSet("prev")}>
             &#10094;
           </a>
-          <a href="#" className="next" onClick={() => onSet("next")}>
+          <a href="javascript:void(0)" className="next" onClick={() => onSet("next")}>
             &#10095;
           </a>
 
