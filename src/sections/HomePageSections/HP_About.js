@@ -23,7 +23,7 @@ export default function HP_About() {
                             {window.innerWidth > 960 &&
                                 <div className='body-text'>
                                     Hi, I’m August. I’m Vietnamese living in Tokyo, <br/>
-                                    pursuing undergraduate study at Digital Hollywood University since 2019.<br/>
+                                    pursuing undergraduate study at Digital Hollywood University since 2019.
                                     I am majoring in Web Direction and Design Seminar, <br/>
                                     fusing with UX/UI Design and Graphic Design.<br/>
                                 </div>

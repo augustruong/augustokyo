@@ -54,5 +54,78 @@
         background-size: cover;
         position: relative;
         margin-bottom: 8%;
+    }
 }
+
+#post-page {
+    width: calc(100%-230px);
+    margin-left: 130px;
+    margin-right: 100px;
+    padding-bottom: 10%;
+    color: #0A0605;
+    background-color: #fff;
+    position: relative;
+
+}
+
+#post-page > .cover-wrapper{
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#post-page > .content-wrapper {
+    padding: 4% 24% 6% 24%;
+}
+#post-page > .content-wrapper > .content-header {
+    margin-bottom: 10%;
+}
+#post-page > .content-wrapper > .content-header > .title { 
+    font-family: 'Montserrat',sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+#post-page > .content-wrapper > .content-header > .subtitle { 
+    font-size: 22px;
+    line-height: 250%;
+}
+
+#post-page > .content-wrapper > .content-header > .time { 
+    font-size: 14px;
+    color:#0A0605;
+}
+
+.content-img {
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+.content-img.flex {
+    width: 100%;
+    margin-bottom: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.content-img.flex >img {
+    width: 49.5%;
+}
+
+.location-btn {
+    position: fixed;
+    left: 82%;
+    top: 82%;
+    border-radius: 100px;
+    padding: 17px 20px;
+    color: #fff;
+    background-color: #0A0605;
+}
+
+.location-btn:hover {
+    background-color: #FFC130;
+    color: #0A0605;
 }

@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import PostThumb from '../components/PostThumb';
 
 import './AllPostWrapper.css'
@@ -6,13 +8,15 @@ import './AllPostWrapper.css'
 export default function AllPostWrapper() {
 	return(
 		<section className='allPost__wrapper'>
-			<div className='l-post-wrapper'>
-                <div className='content'>
-                    <div className='title'>The first day ever in Tokyo</div>
-                    <div className='subtitle'>So... I made it. I finally landed in Tokyo, the city I have been always dreaming of. </div>
-                    <div className='time'>Sep 10, 2018</div>
+            <NavLink to='/post-0'>
+                <div className='l-post-wrapper'>
+                    <div className='content'>
+                        <div className='title'>The first day ever in Tokyo</div>
+                        <div className='subtitle'>So... I made it. I finally landed in Tokyo, the city I have been always dreaming of. </div>
+                        <div className='time'>Sep 10, 2018</div>
+                    </div>
                 </div>
-            </div>
+            </NavLink>
 
             {window.innerWidth > 900 &&
                 <div className='s-posts-wrapper'>

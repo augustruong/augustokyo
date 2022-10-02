@@ -15,6 +15,7 @@ export default function HP_Posts() {
             <div className='allPost__wrapper'>
                 <div className='section-title'>Story Posts</div>
 
+                <NavLink to='./post-0'>
                 <div className='l-post-wrapper'>
                     <div className='content'>
                         <div className='title'>The first day ever in Tokyo</div>
@@ -22,6 +23,7 @@ export default function HP_Posts() {
                         <div className='time'>Sep 10, 2018</div>
                     </div>
                 </div>
+                </NavLink>
 
                 {window.innerWidth > 900 &&
                 <div className='s-posts-wrapper'>

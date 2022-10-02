@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 60px 34px;
+    padding: 50px 36px;
 }
 
 #header a {cursor: pointer;}
@@ -69,7 +69,6 @@
         cursor: pointer;
         border-radius: 50%;
         text-align: center;
-        color: #fff;
         z-index: 999;
     }
 

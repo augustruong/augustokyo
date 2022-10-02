@@ -11,15 +11,17 @@ import HP_Contact from '../sections/HomePageSections/HP_Contact';
 
 export default function HomePage(props) {
     
-    useEffect(() => {document.documentElement.lang = props.lang})
+  useEffect(() => {document.documentElement.lang = props.lang})
 
   return (
-    <div id='home-page' className='dark-theme'>
-        <HP_Topview/>
-        <HP_About/>
-        <HP_Posts/>
-        <HP_Gallery/>
-        <HP_Contact/>
+    <div className='dark-theme'>
+      <div id='home-page'>
+          <HP_Topview/>
+          <HP_About/>
+          <HP_Posts/>
+          <HP_Gallery/>
+          <HP_Contact/>
+      </div>
     </div>
   )
 }
