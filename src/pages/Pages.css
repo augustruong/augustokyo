@@ -7,16 +7,16 @@
     padding-bottom: 7%;
 }
 
-#allPost-page > .cover__wrapper, 
-#gallery-page > .cover__wrapper {
+#allPost-page > .cover-wrapper, 
+#gallery-page > .cover-wrapper {
     height: 70vh;
     background-size: cover;
     position: relative;
     margin-bottom: 8%;
 }
 
-#allPost-page > .cover__wrapper > .content__wrapper,
-#gallery-page > .cover__wrapper > .content__wrapper{
+#allPost-page > .cover-wrapper > .content-wrapper,
+#gallery-page > .cover-wrapper > .content-wrapper{
     position: absolute;
     top: 65%;
     left: 50%;
@@ -26,30 +26,46 @@
     text-align: center;
 }
 
-#allPost-page > .cover__wrapper > .content__wrapper > .title,
-#gallery-page > .cover__wrapper > .content__wrapper > .title{
+#allPost-page > .cover-wrapper > .content-wrapper > .title,
+#gallery-page > .cover-wrapper > .content-wrapper > .title{
     width: 100%;
 }
-#allPost-page > .cover__wrapper > .content__wrapper > .subtitle {
+#allPost-page > .cover-wrapper > .content-wrapper > .subtitle {
     font-family: 'Montserrat',sans-serif;
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 0.1em;
 }
 
-#allPost-page > .cover__wrapper {
+#allPost-page > .cover-wrapper {
     background-image: url('/public/images/storyposts-cover.jpg');
     background-position: center;
 }
  
-#gallery-page > .cover__wrapper {
+#gallery-page > .cover-wrapper {
     background-image: url('/public/images/gallery-cover.jpg');
     background-position: bottom;
 }
 
+
+@media screen and (max-width: 960px) {
+    #allPost-page > .cover-wrapper, 
+    #gallery-page > .cover-wrapper {
+        height: 65vh;
+    }
+
+    #allPost-page > .cover-wrapper > .content-wrapper,
+    #gallery-page > .cover-wrapper > .content-wrapper{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-100%);
+    }
+}
+
 @media screen and (max-width: 520px) {
-    #allPost-page > .cover__wrapper, 
-    #gallery-page > .cover__wrapper {
+    #allPost-page > .cover-wrapper, 
+    #gallery-page > .cover-wrapper {
         height: 70vh;
         background-size: cover;
         position: relative;
@@ -65,7 +81,6 @@
     color: #0A0605;
     background-color: #fff;
     position: relative;
-
 }
 
 #post-page > .cover-wrapper{
@@ -77,9 +92,11 @@
 #post-page > .content-wrapper {
     padding: 4% 24% 6% 24%;
 }
+
 #post-page > .content-wrapper > .content-header {
     margin-bottom: 10%;
 }
+
 #post-page > .content-wrapper > .content-header > .title { 
     font-family: 'Montserrat',sans-serif;
     font-size: 48px;
@@ -96,12 +113,12 @@
     color:#0A0605;
 }
 
-.content-img {
+.content-img, .content-vid {
     width: 100%;
     margin-bottom: 7%;
 }
 
-.content-img.flex {
+.content-img.flex, .content-vid.flex {
     width: 100%;
     margin-bottom: 7%;
     display: flex;
@@ -110,11 +127,12 @@
     justify-content: space-between;
 }
 
-
 .content-img.flex >img {
     width: 49.5%;
 }
-
+.content-vid.flex >video {
+    width: 49.5%;
+}
 .location-btn {
     position: fixed;
     left: 82%;
@@ -128,4 +146,23 @@
 .location-btn:hover {
     background-color: #FFC130;
     color: #0A0605;
+}
+
+@media screen and (max-width: 960px) {
+    #post-page {
+        width: 100%;
+        margin: 0;
+        margin-top: 100px;
+        padding-bottom: 10%;
+    }
+
+    #post-page > .cover-wrapper{
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #post-page > .content-wrapper {
+        padding: 10% 10% 50% 10%;
+    }
 }

@@ -63,6 +63,19 @@ export default function ContentBody(props) {
                 <iframe width="100%" height="400px" src="https://www.youtube.com/embed/4GmS3sCRvfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </>
             }
+
+            {props.index === 5 &&
+                <>
+                <div className='content-vid flex'>
+                    <video autoplay="autoplay" controls>
+                        <source src={process.env.PUBLIC_URL + `./videos/05-02.mp4`} type="video/mp4"/>
+                    </video>
+                    <video autoplay="autoplay" controls>
+                        <source src={process.env.PUBLIC_URL + `./videos/05-01.mp4`} type="video/mp4"/>
+                    </video>
+                </div>
+                </>
+            }
             <button className='black-btn'>
                 <NavLink to='/allpost'>
                     Back to List

@@ -8,14 +8,14 @@ export default function GalleryPage() {
   return (
 	<div className='dark-theme'>
 		<div id='gallery-page'>
-			<section className='cover__wrapper'>
-				<div className='content__wrapper'>
+			<section className='cover-wrapper'>
+				<div className='content-wrapper'>
 					<img className='title'
 						src={process.env.PUBLIC_URL + `./images/gallery-title.svg`}/>
 				</div>
 			</section>
 			<GalleryGridWrapper/>
-			<p style={{textAlign:'center',marginTop:'100px'}}>♡＼(￣▽￣)／♡</p>
+			<p style={{textAlign:'center',marginTop:'100px'}}>To be continued...</p>
 		</div>
 	</div>
   )

@@ -24,10 +24,11 @@
     transform: rotate(180deg);
 }
 
-.nav__item .active {
+{/* .nav__item .active {
     border-left: solid 3px #FFC130;
     color: #FFC130;
 }
+*/}
 
 #header > .header__menu ul li a{
     font-family: 'Montserrat',sans-serif;
@@ -49,6 +50,8 @@
 .current__lang > a {
     text-transform: uppercase;
 }
+
+.fas.fa-times {color: #fff;}
 
 @media screen and (max-width: 960px) {
     #header {

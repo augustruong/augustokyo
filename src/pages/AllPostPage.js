@@ -11,13 +11,17 @@ export default function AllPostPage() {
   return (
 	<div className='dark-theme'>
 		<div id='allPost-page' >
-			<section className='cover__wrapper'>
-				<div className='content__wrapper'>
+			<section className='cover-wrapper'>
+				<div className='content-wrapper'>
 					<img className='title'
 						src={process.env.PUBLIC_URL + `./images/storyposts-title.svg`}/>
 				</div>
 			</section>
+
 			<AllPostWrapper/>
+
+			<p style={{textAlign:'center',marginTop:'100px'}}>To be continued...</p>
+
 		</div>
 	</div>
   )

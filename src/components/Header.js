@@ -53,7 +53,7 @@ export default function Header() {
 
     return(
         <header id='header' style={{color:`${navColor}`}}>
-            <NavLink to='/' className='header__logo'>
+            <NavLink to='/' className='header__logo' onClick={() => setClicked(false)}>
                 {navColor === "white" && 
                     <img src={logo__white} className='logo-svg'/>
                 }
@@ -67,38 +67,59 @@ export default function Header() {
             </div>
 
             <nav className={clicked ? 'header__menu active' : 'header__menu'}>
-                {navColor === "black" && 
+                {window.innerWidth > 960 &&
+                    <>
+                    {navColor === "black" && 
                     <ul className='nav__list'>
                         <li className='nav__item'>
-                            <Link to='/#hp_about'  className='nav__link' onClick={() => setClicked(false)} style={styles.black}>About</Link>
+                            <NavLink to='/#hp_about'  className='nav__link' onClick={() => setClicked(false)} style={styles.black}>About</NavLink>
                         </li>
                         <li className='nav__item'>
-                            <Link to='/#hp_storyPosts'  className='nav__link' onClick={() => setClicked(false)} style={styles.black}>Posts</Link>
+                            <NavLink to='/allpost'  className='nav__link' onClick={() => setClicked(false)} style={styles.black}>Posts</NavLink>
                         </li>
                         <li className='nav__item'>
-                            <Link to='/#hp_gallery'  className='nav__link' onClick={() => setClicked(false)} style={styles.black}>Gallery</Link>
+                            <NavLink to='/gallery'  className='nav__link' onClick={() => setClicked(false)} style={styles.black}>Gallery</NavLink>
                         </li>
                         <li className='nav__item'>
-                            <Link to='/#hp_contact'  className='nav__link' onClick={() => setClicked(false)} style={styles.black}>Contact</Link>
+                            <NavLink to='/#hp_contact'  className='nav__link' onClick={() => setClicked(false)} style={styles.black}>Contact</NavLink>
                         </li>
                     </ul>
+                    }
+                    {navColor === "white" && 
+                        <ul className='nav__list'>
+                            <li className='nav__item'>
+                                <NavLink to='/#hp_about'  className='nav__link' onClick={() => setClicked(false)} style={styles.white}>About</NavLink>
+                            </li>
+                            <li className='nav__item'>
+                                <NavLink to='/allpost'  className='nav__link' onClick={() => setClicked(false)} style={styles.white}>Posts</NavLink>
+                            </li>
+                            <li className='nav__item'>
+                                <NavLink to='/gallery'  className='nav__link' onClick={() => setClicked(false)} style={styles.white}>Gallery</NavLink>
+                            </li>
+                            <li className='nav__item'>
+                                <NavLink to='/#hp_contact'  className='nav__link' onClick={() => setClicked(false)} style={styles.white}>Contact</NavLink>
+                            </li>
+                        </ul>
+                    }
+                    </>
                 }
-                {navColor === "white" && 
-                    <ul className='nav__list'>
-                        <li className='nav__item'>
-                            <Link to='/#hp_about'  className='nav__link' onClick={() => setClicked(false)} style={styles.white}>About</Link>
-                        </li>
-                        <li className='nav__item'>
-                            <Link to='/#hp_storyPosts'  className='nav__link' onClick={() => setClicked(false)} style={styles.white}>Posts</Link>
-                        </li>
-                        <li className='nav__item'>
-                            <Link to='/#hp_gallery'  className='nav__link' onClick={() => setClicked(false)} style={styles.white}>Gallery</Link>
-                        </li>
-                        <li className='nav__item'>
-                            <Link to='/#hp_contact'  className='nav__link' onClick={() => setClicked(false)} style={styles.white}>Contact</Link>
-                        </li>
-                    </ul>
+                {window.innerWidth <= 960 && 
+                        <ul className='nav__list'>
+                            <li className='nav__item'>
+                                <NavLink to='/#hp_about'  className='nav__link' onClick={() => setClicked(false)} style={styles.white}>About</NavLink>
+                            </li>
+                            <li className='nav__item'>
+                                <NavLink to='/allpost'  className='nav__link' onClick={() => setClicked(false)} style={styles.white}>Posts</NavLink>
+                            </li>
+                            <li className='nav__item'>
+                                <NavLink to='/gallery'  className='nav__link' onClick={() => setClicked(false)} style={styles.white}>Gallery</NavLink>
+                            </li>
+                            <li className='nav__item'>
+                                <NavLink to='/#hp_contact'  className='nav__link' onClick={() => setClicked(false)} style={styles.white}>Contact</NavLink>
+                            </li>
+                        </ul>
                 }
+                
             </nav>
 
         {window.innerWidth > 960 &&
