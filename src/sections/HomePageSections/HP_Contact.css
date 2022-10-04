@@ -1,9 +1,15 @@
 #home-page #hp_contact {
-    width: 100vw;
-    height: 110vh;
-    padding-top: 35%;
+    margin-top: 27%;
 }
-#home-page #hp_contact > .wrapper {position: relative;}
+
+#home-page #hp_contact > .wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10%;
+    position: relative;
+}
+
+
 #home-page #hp_contact > .wrapper > .section-title {
     text-align: center;
     margin-bottom: 60px;
@@ -13,7 +19,8 @@
 
 #home-page #hp_contact > .wrapper > img {
     width: 100vw;
-    /* margin-top: 5%; */
+    bottom: 0;
+    position: absolute;
 }
 
 @media screen and (max-width: 640px) {

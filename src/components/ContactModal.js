@@ -1,14 +1,15 @@
 import React, { useRef, useEffect, useCallback } from 'react';
-import { useSpring, animated } from 'react-spring';
+import { animated, useSpring } from '@react-spring/web'
 import styled from 'styled-components';
 
 import { MdClose } from 'react-icons/md';
 
 const Background = styled.div`
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
   position: fixed;
+  top:0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +61,6 @@ const ContactWrapper = styled.div`
     gap: 5px;
   }
 `;
-
 
 const ModalContent = styled.div`
   color: #000;
@@ -123,7 +123,7 @@ export const ContactModal = ({ showModal, setShowModal }) => {
           <animated.div style={animation}>
             <ModalWrapper showModal={showModal}>
               <ModalContent className='flex-column-ct justify-center'>
-                <h3>Drop me a <span>Hi</span>!</h3>
+                <div className='section-title' style={{color:"#725b4c"}}>Drop me a <span>Hi</span>!</div>
                 <MediaWrapper className='flex-row-ct'>
                   <a href='https://www.facebook.com/noiciuciu/' target="_blank">
                     <img src={"https://i.imgur.com/JAI9GFF.png"}/>

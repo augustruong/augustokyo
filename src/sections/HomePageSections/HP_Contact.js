@@ -10,17 +10,19 @@ export default function HP_Contact() {
     const [showModal, setShowModal] = useState(false);
 
     return(
-        <section id='hp_contact'>
-            <div className='wrapper'>
-                <div className='section-title'>Drop me a <span className='yellow'>'Konichiwa' </span>!</div>
-                <button>
-                    <div onClick={() => setShowModal(!showModal)}>
-                        Konichiwa
-                    </div>
-                </button>
-                <img src={process.env.PUBLIC_URL + `./images/homePage-footer.jpg`} />
-            </div>
+        <>
+            <section id='hp_contact'>
+                <div className='wrapper'>
+                        <div className='section-title'>Drop me a <span className='yellow'>'Konichiwa' </span>!</div>
+                        <button>
+                            <a onClick={() => setShowModal(!showModal)}>
+                                Konichiwa
+                            </a>
+                        </button>
+                        <img src={process.env.PUBLIC_URL + `./images/homePage-footer.jpg`} />
+                </div>
+            </section>
             <ContactModal showModal={showModal} setShowModal={setShowModal} />
-        </section>
+        </>
     )
 }

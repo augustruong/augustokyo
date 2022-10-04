@@ -1,22 +1,44 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationData from '../../data/data.json'
+import coverPC from '../../data/cover-pc.json'
+import coverTB from '../../data/cover-tb.json'
+import coverMB from '../../data/cover-mb.json'
 
 import './HP_Topview.css'
 
 export default function HP_Topview() {
-    const defaultOptions = {
+    const defaultOptions_pc = {
         renderer: 'svg',
         loop: true,
         autoplay: true, 
-        animationData: animationData
+        animationData: coverPC
+    }
+    const defaultOptions_tb = {
+        renderer: 'svg',
+        loop: true,
+        autoplay: true, 
+        animationData: coverTB
+    }
+    const defaultOptions_mb = {
+        renderer: 'svg',
+        loop: true,
+        autoplay: true, 
+        animationData: coverMB
     }
     const lang = document.documentElement.lang;
 
     return (
         <section className='hp_topview' id='hp_topview'>
             <div className='home__cover'>
-                <Lottie options={defaultOptions} isClickToPauseDisabled={true} />
+                {window.innerWidth > 640 &&
+                <Lottie options={defaultOptions_pc} isClickToPauseDisabled={true} />
+                }
+                {(window.innerWidth <= 640 && window.innerWidth > 440) &&
+                <Lottie options={defaultOptions_tb} isClickToPauseDisabled={true} />
+                }
+                {window.innerWidth <= 440 &&
+                <Lottie options={defaultOptions_mb} isClickToPauseDisabled={true} />
+                }
             </div>
 
             <img className='home__title'
