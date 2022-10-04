@@ -118,7 +118,7 @@
     margin-bottom: 7%;
 }
 
-.content-img.flex, .content-vid.flex {
+.content-media.flex {
     width: 100%;
     margin-bottom: 7%;
     display: flex;
@@ -127,10 +127,10 @@
     justify-content: space-between;
 }
 
-.content-img.flex >img {
+.content-media.flex >img {
     width: 49.5%;
 }
-.content-vid.flex >video {
+.content-media.flex >video {
     width: 49.5%;
 }
 .location-btn {

@@ -3,7 +3,7 @@
     height: 110vh;
     padding-top: 35%;
 }
-
+#home-page #hp_contact > .wrapper {position: relative;}
 #home-page #hp_contact > .wrapper > .section-title {
     text-align: center;
     margin-bottom: 60px;
