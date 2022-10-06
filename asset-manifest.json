@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/augustokyo/static/css/main.8dfb5a04.css",
-    "main.js": "/augustokyo/static/js/main.945c4241.js",
+    "main.js": "/augustokyo/static/js/main.79542565.js",
     "static/js/787.0f44c0e6.chunk.js": "/augustokyo/static/js/787.0f44c0e6.chunk.js",
     "static/media/IMG_0737.jpg": "/augustokyo/static/media/IMG_0737.283d058aed5784b30872.jpg",
     "static/media/tokyonight.jpg": "/augustokyo/static/media/tokyonight.21eb66a5764a9da2078f.jpg",
@@ -16,11 +16,11 @@
     "static/media/logo-white.svg": "/augustokyo/static/media/logo-white.d4fe45e3a3712615af7ef8184f8beca8.svg",
     "index.html": "/augustokyo/index.html",
     "main.8dfb5a04.css.map": "/augustokyo/static/css/main.8dfb5a04.css.map",
-    "main.945c4241.js.map": "/augustokyo/static/js/main.945c4241.js.map",
+    "main.79542565.js.map": "/augustokyo/static/js/main.79542565.js.map",
     "787.0f44c0e6.chunk.js.map": "/augustokyo/static/js/787.0f44c0e6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8dfb5a04.css",
-    "static/js/main.945c4241.js"
+    "static/js/main.79542565.js"
   ]
 }
