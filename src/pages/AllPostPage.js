@@ -14,7 +14,7 @@ export default function AllPostPage() {
 			<section className='cover-wrapper'>
 				<div className='content-wrapper'>
 					<img className='title'
-						src={process.env.PUBLIC_URL + `./images/storyposts-title.svg`}/>
+						src={process.env.PUBLIC_URL + `/images/storyposts-title.svg`}/>
 				</div>
 			</section>
 

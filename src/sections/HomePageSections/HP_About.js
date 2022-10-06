@@ -11,9 +11,9 @@ export default function HP_About() {
                 <div className='wrapper'>
                     <div className='ava__wrapper'>
                         <img className='ava__textArc'
-                             src={process.env.PUBLIC_URL + `./images/text-arc-2.svg`}/>
+                             src={process.env.PUBLIC_URL + `/images/text-arc-2.svg`}/>
                         <img className='ava__img'
-                             src={process.env.PUBLIC_URL + `./images/avatar.png`}/>
+                             src={process.env.PUBLIC_URL + `/images/avatar.png`}/>
                     </div>
                     <div className='content__wrapper'>
                         <div className='section-title'>About <span className='yellow'>me</span></div>

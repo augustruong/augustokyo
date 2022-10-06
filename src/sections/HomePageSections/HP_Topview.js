@@ -42,14 +42,14 @@ export default function HP_Topview() {
             </div>
 
             <img className='home__title'
-                src={process.env.PUBLIC_URL + `./images/augustintokyo.svg`}/>
+                src={process.env.PUBLIC_URL + `/images/augustintokyo.svg`}/>
 
             {window.innerWidth > 640 &&
                 <div>
                     <img className='home__tokyo'
-                        src={process.env.PUBLIC_URL + `./images/東京.svg`}/>
+                        src={process.env.PUBLIC_URL + `/images/東京.svg`}/>
                     <img className='home__hachigatsu'
-                        src={process.env.PUBLIC_URL + `./images/八月.svg`}/>
+                        src={process.env.PUBLIC_URL + `/images/八月.svg`}/>
                 </div>
             }
             

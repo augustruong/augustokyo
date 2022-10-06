@@ -19,7 +19,7 @@ export default function HP_Contact() {
                                 Konichiwa
                             </a>
                         </button>
-                        <img src={process.env.PUBLIC_URL + `./images/homePage-footer.jpg`} />
+                        <img src={process.env.PUBLIC_URL + `/images/homePage-footer.jpg`} />
                 </div>
             </section>
             <ContactModal showModal={showModal} setShowModal={setShowModal} />

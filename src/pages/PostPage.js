@@ -14,7 +14,8 @@ export default function PostPage(props) {
         <div id='post-page'>
             <section className='cover-wrapper'
                 style={{ 
-                    backgroundImage: `url("images/${thisPost.postId}-00.jpg")` 
+                    backgroundImage: `url(${process.env.PUBLIC_URL + `/images/${thisPost.postId}-00.jpg`})` 
+                    
                 }}>
             </section>
             <section className='content-wrapper'>

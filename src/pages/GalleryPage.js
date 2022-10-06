@@ -11,7 +11,7 @@ export default function GalleryPage() {
 			<section className='cover-wrapper'>
 				<div className='content-wrapper'>
 					<img className='title'
-						src={process.env.PUBLIC_URL + `./images/gallery-title.svg`}/>
+						src={process.env.PUBLIC_URL + `/images/gallery-title.svg`}/>
 				</div>
 			</section>
 			<GalleryGridWrapper/>

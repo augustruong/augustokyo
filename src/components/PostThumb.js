@@ -11,7 +11,7 @@ export default function PostThumb(props) {
             <div className='postThumb__wrapper'>
                 <div className={`postThumb__${thisPost.thumbSize}Img`}
                     style={{ 
-                        backgroundImage: `url("images/${thisPost.postId}-00.jpg")` 
+                        backgroundImage: `url(${process.env.PUBLIC_URL + `/images/${thisPost.postId}-00.jpg`})` 
                     }}
                 >
                 </div>
