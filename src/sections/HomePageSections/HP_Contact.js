@@ -13,13 +13,18 @@ export default function HP_Contact() {
         <>
             <section id='hp_contact'>
                 <div className='wrapper'>
-                        <div className='section-title'>Drop me a <span className='yellow'>'Konichiwa' </span>!</div>
-                        <button>
-                            <a onClick={() => setShowModal(!showModal)}>
-                                Konichiwa
-                            </a>
-                        </button>
-                        <img src={process.env.PUBLIC_URL + `/images/homePage-footer.jpg`} />
+                    <div className='section-title'>Drop me a <span className='yellow'>'Konichiwa' </span>!</div>
+                    <button>
+                        <a onClick={() => setShowModal(!showModal)}>
+                            Konichiwa
+                        </a>
+                    </button>
+                    <div className='footer-img'
+                        style={{ 
+                            backgroundImage: `url(${process.env.PUBLIC_URL + `/images/homePage-footer.jpg`})` 
+                        }}>
+                        
+                    </div>
                 </div>
             </section>
             <ContactModal showModal={showModal} setShowModal={setShowModal} />

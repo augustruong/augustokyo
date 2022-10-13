@@ -17,15 +17,17 @@
 
 #home-page #hp_contact > .wrapper > button {display: block; margin: 80px auto;}
 
-#home-page #hp_contact > .wrapper > img {
+#home-page #hp_contact > .wrapper > .footer-img {
     width: 100vw;
+    height: 50vh;
     bottom: 0;
     position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media screen and (max-width: 640px) {
-    #home-page #hp_contact > .wrapper > img {
-        width: 250vw;
-        margin-left: -40%;
+    #home-page #hp_contact > .wrapper > .footer-img {
+        background-position: 30%;
     }
 }
